@@ -1,0 +1,30 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins-datadog
+    image: jenkins-datadog
+    build:
+      context: jenkins_dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - $PWD/jenkins_home:/var/jenkins_home
+      # add for docker
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - DOCKER_HOST=tcp://socat:2375
+    networks:
+      - net
+# why adding socat 
+# https://mingheng.medium.com/solving-permission-denied-while-trying-to-connect-to-docker-daemon-socket-from-container-in-mac-os-600c457f1276
+  socat:
+    image: bpack/socat
+    command: TCP4-LISTEN:2375,fork,reuseaddr UNIX-CONNECT:/var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    expose:
+      - "2375"
+    networks:
+      - net
+networks:
+  net:

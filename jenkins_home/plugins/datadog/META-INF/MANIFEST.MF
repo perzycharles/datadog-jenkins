@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.346.1
+Plugin-Dependencies: jnr-posix-api:3.1.7-1,pipeline-rest-api:2.12,work
+ flow-cps:2746.v0da_83a_332669,workflow-durable-task-step:1164.v2334dd
+ cf48d0,workflow-job:1203.v7b_7023424efe,credentials:1139.veb_9579fca_
+ 33b_,plain-credentials:1.8,pipeline-model-definition:1.4.0
+Implementation-Title: Datadog Plugin
+Long-Name: Datadog Plugin
+Implementation-Version: 5.6.1
+Group-Id: org.datadog.jenkins.plugins
+Plugin-License-Name: MIT
+Specification-Title: Datadog Plugin
+Plugin-ScmUrl: https://github.com/jenkinsci/datadog-plugin
+Plugin-Version: 5.6.1
+Jenkins-Version: 2.346.1
+Url: https://github.com/jenkinsci/datadog-plugin
+Short-Name: datadog
+Plugin-License-Url: https://www.opensource.org/licenses/mit-license.ph
+ p
+Compatible-Since-Version: 1.0.0
+Plugin-Developers: Datadog:datadog:dev@datadoghq.com
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.2
+Specification-Version: 5.6
+

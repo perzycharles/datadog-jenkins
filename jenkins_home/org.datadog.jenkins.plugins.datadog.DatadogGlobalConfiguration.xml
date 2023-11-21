@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.datadog.jenkins.plugins.datadog.DatadogGlobalConfiguration plugin="datadog@5.6.1">
+  <reportWith>HTTP</reportWith>
+  <targetApiURL>https://api.datadoghq.com/api/</targetApiURL>
+  <targetLogIntakeURL>https://http-intake.logs.datadoghq.com/v1/input/</targetLogIntakeURL>
+  <targetWebhookIntakeURL>https://webhook-intake.datadoghq.com/api/v2/webhook/</targetWebhookIntakeURL>
+  <targetApiKey>{AQAAABAAAAAwD+dRmwRlveiLlUJjDPMWldsaP0XiYyKpBVGRD7t7yXRSXsNbkPlR66B4+K3SN3QYIEBwEJyABt9mxU1uYurqXA==}</targetApiKey>
+  <targetCredentialsApiKey></targetCredentialsApiKey>
+  <usedApiKey>{AQAAABAAAAAwy2EWc5lezHEYyIIQDBik0xuW/Vy+EMM1ypveFZxmdEc2GvBohOe+3MkllccfGaMArKqD29MYPigiAlPcTeBzGQ==}</usedApiKey>
+  <targetHost>localhost</targetHost>
+  <targetPort>8125</targetPort>
+  <targetTraceCollectionPort>8126</targetTraceCollectionPort>
+  <traceServiceName>jenkins-datadog-tse-sandbox</traceServiceName>
+  <hostname>jenkins-datadog-tse-sandbox</hostname>
+  <blacklist></blacklist>
+  <whitelist></whitelist>
+  <globalTagFile></globalTagFile>
+  <globalTags></globalTags>
+  <globalJobTags></globalJobTags>
+  <includeEvents></includeEvents>
+  <excludeEvents></excludeEvents>
+  <emitSecurityEvents>true</emitSecurityEvents>
+  <emitSystemEvents>true</emitSystemEvents>
+  <emitConfigChangeEvents>false</emitConfigChangeEvents>
+  <collectBuildLogs>true</collectBuildLogs>
+  <collectBuildTraces>true</collectBuildTraces>
+  <retryLogs>true</retryLogs>
+  <refreshDogstatsdClient>false</refreshDogstatsdClient>
+  <cacheBuildRuns>true</cacheBuildRuns>
+  <useAwsInstanceHostname>false</useAwsInstanceHostname>
+</org.datadog.jenkins.plugins.datadog.DatadogGlobalConfiguration>
