@@ -3,15 +3,20 @@ This is a docker environment for jenkins monitoring
 https://docs.datadoghq.com/integrations/jenkins/#plugin-user-interface
 
 ## Step 1: build images
+```
 $ docker-compose build
-
+```
 ## step 2: spin up containers
+```
 $ docker-compose up -d
+```
 
 ## step 3: log in to jenkins management console
 http://localhost:8080/
+```
 username: admin
 password: admin
+```
 
 ## step 4: set the correct API Key and Datadog endpoints
 
